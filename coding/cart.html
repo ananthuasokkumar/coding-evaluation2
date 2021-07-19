@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #products {
+        display: grid;
+        gap: 10px;
+        height: 100vh;
+        width: 90%;
+        grid-template-columns: repeat(3, 20%);
+
+        justify-content: space-evenly;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+      }
+      .pdiv {
+        width: 200px;
+        height: 250px;
+        margin-bottom: 50px;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+      .amount {
+        height: 300px;
+        width: 400px;
+        background-color: plum;
+      }
+      .total {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="h2l" onclick="cartamount()">cartamount</button>
+    <button id="item" onclick="show()">items</button>
+    <button id="item1" onclick="placeorder()">PlaceOrder</button>
+    <div class="container">
+      <div class="amount">checkout</div>
+      <div id="products"></div>
+    </div>
+  </body>
+</html>
+<script src="cart.js"></script>
